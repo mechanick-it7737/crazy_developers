@@ -5,7 +5,7 @@
   line-height: 1.2;
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 0;
+    margin-bottom: unset;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -22,9 +22,8 @@
 .about__item {
   width: 100%;
   @media screen and (min-width: $tablet) {
-    
     &:not(:last-child) {
-        margin-right: 54px;
+      margin-right: 54px;
     }
   }
 }
