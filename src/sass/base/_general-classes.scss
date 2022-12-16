@@ -1,38 +1,65 @@
 body {
-    font-family: 'Montserrat';
-    color: $primary-text-color;
+  font-family: 'Montserrat';
+  color: $primary-text-color;
 }
 
 section {
-    padding-bottom: 60px;
+  padding-bottom: 60px;
 
-    @media screen and (min-width: $desktop) {
-        padding-bottom: 100px;
-    }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 100px;
+  }
 }
 
 .container {
-    max-width: 480px;
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 
-    @media screen and (min-width: $tablet) {
-        padding-left: 24px;
-        padding-right: 24px;
-        max-width: 720px;
-    }
+  @media screen and (min-width: $tablet) {
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 720px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        max-width: 1232px;
-    }
+  @media screen and (min-width: $desktop) {
+    max-width: 1232px;
+  }
 }
 
 .title {
-font-size: 44px;
-line-height: 1.23;
+  display: flex;
+  align-items: center;
 
-text-transform: uppercase;
+  margin-bottom: 32px;
+  
+  font-size: 24px;
+  line-height: 1.2;
 
-color: $primary-text-color;
+  text-transform: uppercase;
+
+  color: $primary-text-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 44px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 80px;
+  }
+
+  &::after {
+    content: '';
+    
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    
+    margin-left: 14px;
+
+    height: 1px;
+
+    background-color: $primary-text-color;
+  }
 }
