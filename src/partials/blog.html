@@ -27,35 +27,83 @@
                 <picture>
                     <source srcset="./images/flowers-slider1.jpg 1x, ./images/flowers-slider1@x2.jpg 2x"
                     media="(min-width: 1232px)">
-                    <source srcset="./images/flowers-slider_tablet3.jpg 1x, ./images/flowers-slider_tablet3@x2.jpg 2x"
+                    <source srcset="./images/flowers-slider_tablet1.jpg 1x, ./images/flowers-slider_tablet1@x2.jpg 2x"
                     media="(min-width: 768px)">
-                    <source srcset="./images/flowers-slider_mobile3.jpg 1x, ./images/flowers-slider_mobile3@x2.jpg 2x"
+                    <source srcset="./images/flowers-slider_mobile1.jpg 1x, ./images/flowers-slider_mobile1@x2.jpg 2x"
                     media="(max-width: 480px)">
                     <img src="./images/flowers-slider1.jpg" alt="flowers">
                 </picture>
             </li>
             <li>
-                <img src="./images/flowers-slider2.jpg" alt="flowers" width="315">
+                <picture>
+                    <source srcset="./images/flowers-slider2.jpg 1x, ./images/flowers-slider2@x2.jpg 2x"
+                    media="(min-width: 1232px)">
+                    <source srcset="./images/flowers-slider_tablet2.jpg 1x, ./images/flowers-slider_tablet2@x2.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/flowers-slider_mobile2.jpg 1x, ./images/flowers-slider_mobile2@x2.jpg 2x"
+                    media="(max-width: 480px)">
+                    <img src="./images/flowers-slider2@x2.jpg" alt="flowers">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <source srcset="./images/flowers-slider4.jpg 1x, ./images/flowers-slider4@x2.jpg 2x"
+                    media="(min-width: 1232px)">
+                    <source srcset="./images/flowers-slider_tablet4.jpg 1x, ./images/flowers-slider_tablet4@x2.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/flowers-slider_mobile4.jpg 1x, ./images/flowers-slider_mobile4@x2.jpg 2x"
+                    media="(max-width: 480px)">
+                    <img src="./images/flowers-slider4.jpg" alt="flowers">
+            </picture>
+            </li>
+            <li>
+                <picture>
+                    <source srcset="./images/flowers-slider5.jpg 1x, ./images/flowers-slider5@x2.jpg 2x"
+                    media="(min-width: 1232px)">
+                    <source srcset="./images/flowers-slider_tablet5.jpg 1x, ./images/flowers-slider_tablet5@x2.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/flowers-slider_mobile5.jpg 1x, ./images/flowers-slider_mobile5@x2.jpg 2x"
+                    media="(max-width: 480px)">
+                    <img class="image" src="./images/flowers-slider5.jpg" alt="flowers">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <source srcset="./images/flowers-slider6.jpg 1x, ./images/flowers-slider6@x2.jpg 2x"
+                    media="(min-width: 1232px)">
+                    <source srcset="./images/flowers-slider_tablet6.jpg 1x, ./images/flowers-slider_tablet6@x2.jpg 2x"
+                    media="(min-width: 768px)">
+                    <source srcset="./images/flowers-slider_mobile6.jpg 1x, ./images/flowers-slider_mobile6@x2.jpg 2x"
+                    media="(max-width: 480px)">
+                    <img src="./images/flowers-slider6.jpg" alt="flowers">
+                </picture>
             </li>
         </ul>
         <p>Follow to our newsletter</p>
-        <button class="button" type="submit">Subscribe</button>
+        <button class="content__button" type="submit" data-modal-open>Subscribe</button>
     </div>
 </section>
-<div>
-    <picture>
-        <source srcset="./images/modal.jpg 1x, ./images/modal@2x.jpg 2x"
-        media="(min-width: 1232px)">
-        <source srcset="./images/modal-tablet.jpg 1x, ./images/modal-tablet@2x.jpg 2x"
-        media="(min-width: 768px)">
-        <source srcset="./images/modal-mobile.jpg 1x, ./images/modal-mobile@2x.jpg 2x"
-        media="(max-width: 480px)">
-        <img src="./images/modal.jpg" alt="flowers">
-    </picture>
-    <p></p>
-    <p></p>
-    <form action=""></form>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal__close" data-modal-close>x</button>
+        <picture>
+            <source srcset="./images/modal.jpg 1x, ./images/modal@2x.jpg 2x"
+            media="(min-width: 1232px)">
+            <source srcset="./images/modal-tablet.jpg 1x, ./images/modal-tablet@2x.jpg 2x"
+            media="(min-width: 768px)">
+            <source srcset="./images/modal-mobile.jpg 1x, ./images/modal-mobile@2x.jpg 2x"
+            media="(max-width: 480px)">
+            <img class="modal__icon" src="./images/modal.jpg" alt="flowers">
+        </picture>
+        <p class="modal__text">Follow to our newsletter</p>
+        <p class="modal__info">Be the first  to get exclusive offers and the latest  news on our product directly in your box.</p>
+        <form class="modal__form">
+            <label class="modal__label" for="email">E-mail</label>
+            <input type="email" name="email" id="mail" placeholder="Your email">
+            <button class="modal__button">Subscribe</button>
+        </form>
+    </div>
 </div>
-
+<script src="/src/js/index.js"></script>
 </body>
 </html>
