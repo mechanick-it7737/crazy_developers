@@ -1,40 +1,57 @@
-.delivery__list {
-    @media screen and (min-width: $desktop) {
-        text-align: center;
-    }
-}
-
 .delivery__item {
-    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 14px;
 }
 
 .delivery-item__wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    width: 40px;
-    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
 
     border: 1px solid $primary-text-color;
     border-radius: 50%;
+
+    @media screen and (min-width: $tablet) {
+        min-width: 64px;
+        min-height: 64px;
+    }
+
+    
 }
 
 .delivery-item__number {
-    position: absolute;
-    top: 0;
-    left: 0;
-
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 26px;
+    }
 }
 
 .delivery-item__text {
-    margin-left: 84px;
+    margin-left: 8px;
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
+
+    @media screen and (min-width: $tablet) {
+        margin-left: 20px;
+
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 56px;
+
+        font-size: 32px;
+    }
 }
    
