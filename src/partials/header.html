@@ -1,94 +1,104 @@
 <header class="header">
-    <div class="container">
-      <div class="nav">
-        <nav class="nav__block">
-            <svg class="nav__logo"  >
-              <use href="./images/sprite.svg#iconlogo" ></use>
-            </svg>
-          <button
-            type="button"
-            class="nav__button is-open"
-            aria-expanded="false"
-            aria-controls="nav__container"
-            data-menu-button
-          >
-          <svg
-            class="nav__icon"
-            width="40px"
-            height="40px"
-            aria-label="Перемикач мобільного меню">
-            <use
-              class="nav__close"
-              href="./images/sprite.svg#iconclose">
-            </use>
-            <use
-              class="nav__menu"
-              href="./images/sprite.svg#iconburger-menu">
-            </use>
-          </svg>
-          </button>
-          <ul class="nav__pages">
-            <li class="nav__item">
-              <a href="/"
-                class="nav__link"> Anemone
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="/"
-                class="nav__link"> About us
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="/"
-                class="nav__link"> Store
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="/"
-                class="nav__link"> Delivery
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="/"
-                class="nav__link"> Blog
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="connection">
-          <li class="connection__item">
-            <a class="connection__link"
-              href="tel:">
-              <svg class="connection__icon" width="10px" height="16px">
-                <use href="./images/sprite.svg#icontel"></use>
-              </svg>
+  <div class="container">
+    <div class="nav">
+      <nav class="nav__block">
+        <svg class="nav__logo">
+          <use href="./images/sprite.svg#iconlogo"></use>
+        </svg>
+        <ul class="nav__pages">
+          <li class="nav__item">
+            <a href="#title-1"
+               class="nav__link"> Anemone
             </a>
           </li>
-        </ul> 
-      </div>
+          <li class="nav__item">
+            <a href="#title-2"
+               class="nav__link"> About us
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#title-3"
+               class="nav__link"> Store
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#title-4"
+               class="nav__link"> Delivery
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#title-5"
+               class="nav__link"> Blog
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="connection">
+        <li class="connection__item">
+          <a class="connection__link"
+             href="tel:">
+            <svg class="connection__icon">
+              <use href="./images/sprite.svg#icontel"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <button id="mainMenuButton"
+        type="button"
+        class="nav__button is-open"
+        aria-expanded="false"
+        aria-controls="nav__container"
+        data-menu-button
+        click="myJSFunc">
+        <svg class="nav__icon"
+            width="24px"
+            height="24px"
+            aria-label="Перемикач мобільного меню">
+          <use class="nav__menu"
+              href="./images/sprite.svg#iconburger-menu">
+          </use>
+        </svg>
+      </button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- nav-menu -->
+<!-- nav-menu -->
 
-<div class="nav__container" id="nav__container" data-menu>
+<div class="nav__container"
+     id="nav__container"
+     data-menu>
+  <div class="nav__container--button">
+    <svg id="closeMenuBtn"
+         class="nav__container--icon"
+         width="24px"
+         height="24px"
+         aria-label="Перемикач мобільного меню">
+      <use class="nav__close"
+           href="./images/sprite.svg#iconclose">
+      </use>
+    </svg>
+  </div>
   <ul class="nav__container--pages">
-    <li class="nav__container--item current">
-      <a href="/" class="nav__container--link current"> Anemone </a>
+    <li class="nav__container--item">
+      <a href="#title-1"
+         class="nav__container--link"> Anemone </a>
     </li>
     <li class="nav__container--item">
-      <a href="/" class="nav__container--link"> About us </a>
+      <a href="#title-2"
+         class="nav__container--link"> About us </a>
     </li>
     <li class="nav__container--item">
-      <a href="/" class="nav__container--link"> Store </a>
+      <a href="#title-3"
+         class="nav__container--link"> Store </a>
     </li>
     <li class="nav__container--item">
-      <a href="/" class="nav__container--link"> Delivery </a>
+      <a href="#title-4"
+         class="nav__container--link"> Delivery </a>
     </li>
     <li class="nav__container--item">
-      <a href="/" class="nav__container--link"> Blog </a>
+      <a href="#title-5"
+         class="nav__container--link"> Blog </a>
     </li>
   </ul>
 </div>
-
-    <script src="./js/index.js"></script>

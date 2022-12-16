@@ -1,5 +1,4 @@
 .nav {
-    padding-top: 40px;
     display: flex;
     align-items: center;
   
@@ -21,9 +20,7 @@
   
   
     &__button {
-      z-index: 3;
-      right: 5%;
-      position: absolute;
+      margin-left: 14px;
       display: inline-flex;
       padding: 0;
       border: none;
@@ -57,22 +54,37 @@
         margin-left: 80px;
         gap: 24px;
       }
+
+      @media screen and (min-width: $desktop) {
+        margin-left: 261px;
+        gap: 48px;
+      }
     }
+
   
     &__link {
       display: block;
-      line-height: 1.17;
-      letter-spacing: 0.02em;
+      font-size: 20px;
+      line-height: 1.2;
       text-decoration: none;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     }
   
     .connection {
       margin-left: auto;
-    
-       &__icon {
-        width: 24px;
-        height: 24px;
+
+      &__link {
+        display: flex;
+      }
+
+      &__icon {
+        width: 22px;
+        height: 22px;
+        
+        @media screen and (min-width: $desktop) {
+          width: 28px;
+          height: 28px;
+        }
       }
     }
   }
