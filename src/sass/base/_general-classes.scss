@@ -6,7 +6,7 @@ body {
 section {
     padding-bottom: 60px;
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: $desktop) {
         padding-bottom: 100px;
     }
 }
@@ -21,7 +21,7 @@ section {
         max-width: 720px;
     }
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: $desktop) {
         max-width: 1232px;
     }
 }
