@@ -6,13 +6,9 @@
 
 .delivery__item {
     position: relative;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
 }
 
-.delivery-item__number {
+.delivery-item__wrap {
     position: absolute;
     top: 0;
     left: 0;
@@ -24,7 +20,21 @@
     border-radius: 50%;
 }
 
+.delivery-item__number {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
 .delivery-item__text {
     margin-left: 84px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
 }
    
