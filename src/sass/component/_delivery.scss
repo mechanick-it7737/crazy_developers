@@ -1,0 +1,30 @@
+.delivery__list {
+    @media screen and (min-width: $desktop) {
+        text-align: center;
+    }
+}
+
+.delivery__item {
+    position: relative;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.delivery-item__number {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid $primary-text-color;
+    border-radius: 50%;
+}
+
+.delivery-item__text {
+    margin-left: 84px;
+}
+   

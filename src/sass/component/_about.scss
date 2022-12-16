@@ -5,7 +5,7 @@
   line-height: 1.2;
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 0;
+    margin-bottom: unset;
     font-size: 20px;
     line-height: 1.2;
   }

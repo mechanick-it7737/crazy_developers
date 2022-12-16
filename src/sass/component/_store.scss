@@ -82,36 +82,3 @@
     }
 
 }
-
-.button {
-    display: block;
-    padding: 14px 28px;
-    width: 208px;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    background-color: $button-color;
-    border-radius: 38px;
-
-
-    font-weight: 500;
-    font-size: 20px;
-    line-height: calc(24 / 28);
-
-    color: $primary-white-color;
-
-    &:hover {
-        background-color: $button-hover-color;
-    }
-
-    &:focus {
-        background-color: $button-focus-color;
-    }
-
-    @media screen and(min-width: $tablet) {
-        padding: 16px 32px;
-    }
-
-
-}

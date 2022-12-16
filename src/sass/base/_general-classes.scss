@@ -63,3 +63,59 @@ section {
     background-color: $primary-text-color;
   }
 }
+
+
+.content__button {
+    display: block;
+    padding: 14px 28px;
+    width: 208px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $button-color;
+    border-radius: 38px;
+
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 28);
+
+    color: $primary-white-color;
+
+    &:hover {
+        background-color: $button-hover-color;
+    }
+
+    &:focus {
+        background-color: $button-focus-color;
+    }
+
+    @media screen and(min-width: $tablet) {
+        padding: 16px 32px;
+    }
+}
+
+.modal__button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 14px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  color: $primary-white-color;
+  background-color: $button-color;
+  border-radius: 8px;
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+  @media screen and (min-width: 768px) and (max-width: $desktop) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+}
