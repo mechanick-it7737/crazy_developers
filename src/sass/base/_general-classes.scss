@@ -42,6 +42,7 @@ section {
   color: $primary-text-color;
 
   @media screen and (min-width: $tablet) {
+    font-size: 44px;
     margin-bottom: 60px;
   }
   @media screen and (min-width: $desktop) {
