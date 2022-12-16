@@ -29,6 +29,9 @@ section {
 }
 
 .title {
+  display: flex;
+  align-items: center;
+
   margin-bottom: 32px;
   
   font-size: 24px;
@@ -43,5 +46,17 @@ section {
   }
   @media screen and (min-width: $desktop) {
     margin-bottom: 80px;
+  }
+
+  &::after {
+    content: '';
+    
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    
+    margin-left: 14px;
+
+    border: 1px solid $primary-text-color;
   }
 }
