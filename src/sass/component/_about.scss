@@ -22,9 +22,8 @@
 .about__item {
   width: 100%;
   @media screen and (min-width: $tablet) {
-    
     &:not(:last-child) {
-        margin-right: 54px;
+      margin-right: 54px;
     }
   }
 }
