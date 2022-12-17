@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,EAAEC,UAAUC,OAAM,WAChBF,EAAE,WAAWG,O","sources":["src/js/slider.js"],"sourcesContent":["$(document).ready(function () { \n  $('.slider').slick();\n});"],"names":["$","document","ready","slick"],"version":3,"file":"index.e1a3229f.js.map"}
