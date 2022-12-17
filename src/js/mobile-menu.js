@@ -4,6 +4,7 @@
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
   const closeMenuBtn = document.getElementById("closeMenuBtn");
+  const menuItems = document.getElementById("mobile-menu").children;
 
   const closeMenuFunc = (e) => {
     if (
@@ -19,6 +20,10 @@
     document.body.style.overflowY = null;
   }
 
+  for(let element of menuItems){
+    element.addEventListener("click", closeMenuFunc);
+  }
+  
   mainMenuBtn.addEventListener("click", () => {
     if (document.body.style.overflowY) {
       document.body.style.overflowY = null;
