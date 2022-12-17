@@ -23,7 +23,9 @@
     min-width: 272px;
     padding: 0;
     transition: transform 250ms linear;
-  
+@media screen and (min-width: $desktop) {
+    display: flex;
+  }  
   &__close {
     position: absolute;
     left: 95%;
@@ -35,7 +37,6 @@
     padding-right: 16px;
   }
   &__icon {
-    display: block;
     width: 100%;
     height: 100%;
   }
