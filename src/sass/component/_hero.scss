@@ -1,40 +1,364 @@
-@media screen and (min-width: $mobile) {
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
 }
-@media screen and (max-width: $tablet) {
+@media screen and (min-width: 768px) and (max-width: $desktop) {
 }
-@media screen and (max-width: 1279.98) {
+@media screen and (min-width: $desktop) {
 }
 
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  @media screen and (min-width: $mobile) {
-  }
-  @media screen and (max-width: $tablet) {
-  }
-  @media screen and (max-width: 1279.98) {
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $tablet) and (max-width: $tablet) {
+      padding-top: 44px;
+    }
+    @media screen and (min-width: 768px) and (max-width: $desktop) {
+      padding-top: 38px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 64px;
+    }
   }
 
   &__subtitle {
     display: block;
+
     font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
 
     color: #000000;
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      margin-right: 14px;
+
       font-size: 14px;
       line-height: calc(17 / 14);
     }
-    @media screen and (max-width: $tablet) {
+    @media screen and (min-width: 768px) and (max-width: $desktop) {
+      margin-right: 40px;
+
       font-size: 24px;
       line-height: calc(29 / 24);
     }
-    @media screen and (max-width: 1279.98) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 110px;
+
       font-size: 32px;
       line-height: calc(39 / 32);
+    }
+  }
+  &__img {
+    justify-content: center;
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      margin-right: 8px;
+    }
+    @media screen and (min-width: 768px) and (max-width: $desktop) {
+      margin-right: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 110px;
+    }
+  }
+
+  &__btn {
+    background-color: transparent;
+  }
+
+  &__svg {
+    fill: $primary-text-color;
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      width: 64px;
+      height: 76px;
+    }
+    @media screen and (min-width: 768px) and (max-width: $desktop) {
+      width: 145px;
+      height: 150px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 166px;
+      height: 166px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    left: auto;
+    right: auto;
+    font-weight: 400;
+
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      bottom: 27px;
+      font-size: 52px;
+      line-height: calc(63 / 52);
+    }
+    @media screen and (min-width: 768px) and (max-width: $desktop) {
+      bottom: 0;
+      font-size: 120px;
+      line-height: calc(146 / 120);
+    }
+    @media screen and (min-width: $desktop) {
+      bottom: 0;
+      font-size: 160px;
+      line-height: calc(195 / 160);
+    }
+  }
+}
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+  z-index: 3;
+
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  // .modal {
+  //   transform: translate(-50%, -50%) scale(0.6);
+  // }
+}
+
+.modal-connection {
+  width: 480px;
+
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 48px 32px;
+  outline: 1px solid hotpink;
+  color: #5c5c5c;
+  background-color: $primary-white-color;
+
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    width: 272px;
+    padding: 28px 16px;
+  }
+  @media screen and (min-width: 768px) and (max-width: $desktop) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+
+    color: $primary-text-color;
+
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      margin-bottom: 14px;
+
+      font-size: 20px;
+      line-height: calc(24 / 20);
+    }
+    @media screen and (min-width: 768px) and (max-width: $desktop) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
+  }
+
+  &__discription {
+    margin-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      margin-bottom: 18px;
+
+      font-size: 12px;
+      line-height: calc(15 / 12);
+    }
+    @media screen and (min-width: 768px) and (max-width: $desktop) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
+  }
+}
+.form-connection {
+  &__name {
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      font-size: 10px;
+      line-height: calc(12 / 10);
+    }
+    @media screen and (min-width: 768px) and (max-width: $desktop) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
+  }
+
+  &__field {
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    padding: 16px 0 16px 16px;
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      padding: 10px 0 10px 12px;
+      margin-bottom: 14px;
+    }
+    @media screen and (min-width: 768px) and (max-width: $desktop) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
+  }
+
+  &__field::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+
+    color: rgba(0, 0, 0, 0.4);
+
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      font-size: 12px;
+      line-height: calc(15 / 12);
+    }
+    @media screen and (min-width: 768px) and (max-width: $desktop) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
+  }
+}
+
+.form-hero__btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 14px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+
+  color: $primary-white-color;
+  background-color: $button-color;
+  border-radius: 8px;
+
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+  @media screen and (min-width: 768px) and (max-width: $desktop) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  color: transparent;
+  fill: $primary-text-color;
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    top: 16px;
+    right: 16px;
+  }
+  @media screen and (min-width: 768px) and (max-width: $desktop) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+
+  &__svg {
+    fill: $primary-text-color;
+
+    width: 24px;
+    height: 24px;
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      width: 18px;
+      height: 18px;
+    }
+    @media screen and (min-width: 768px) and (max-width: $desktop) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
+  }
+}
+
+.modal-thanks {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 44px 16px 32px 16px;
+  width: 480px;
+
+  background-color: $primary-white-color;
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    padding: 54px 32px;
+    width: 320px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+
+    text-align: center;
+    color: $primary-text-color;
+
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      margin-bottom: 14px;
+
+      font-size: 20px;
+      line-height: calc(24 / 20);
+    }
+    @media screen and (min-width: 768px) and (max-width: $desktop) {
+    }
+    @media screen and (min-width: $desktop) {
+    }
+  }
+
+  // &__title::before {
+  //   content: "";
+  //   background-image: ;
+  // }
+
+  &__description {
+    margin-bottom: 34px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-align: center;
+
+    color: #5c5c5c;
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      margin-bottom: 18px;
+
+      font-size: 12px;
+      line-height: calc(15 / 12);
+    }
+    @media screen and (min-width: 768px) and (max-width: $desktop) {
+    }
+    @media screen and (min-width: $desktop) {
     }
   }
 }

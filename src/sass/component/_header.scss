@@ -1,93 +1,86 @@
 .nav {
+  display: flex;
+  align-items: center;
+
+  &__block {
     display: flex;
     align-items: center;
-  
-    &__block {
+  }
+
+  &__logo {
+    width: 45px;
+    height: 35px;
+    color: $secondary-text-color;
+
+    @media screen and (min-width: $tablet) {
+      width: 72px;
+      height: 57px;
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    margin-left: 14px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__button.is-open .nav__menu {
+    display: block;
+  }
+
+  &__button.is-open .nav__close {
+    display: none;
+  }
+
+  &__pages {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
       display: flex;
-      align-items: center;
+      padding-top: 0;
+      margin: 0;
+      margin-left: 80px;
+      gap: 24px;
     }
-  
-    &__logo {
-      width: 45px;
-      height: 35px;
-  
-      @media screen and (min-width: $tablet) {
-        width: 72px;
-        height: 57px;
-      }
-    }
-  
-  
-  
-    &__button {
-      display: inline-flex;
 
-      margin-left: 14px;
-      padding: 0;
+    @media screen and (min-width: $desktop) {
+      margin-left: 261px;
+      gap: 48px;
+    }
+  }
 
-      border: none;
-      background-color: transparent;
-  
-      @media screen and (min-width: $tablet) {
-        display: none;
-      }
-    }
-  
-  
-    &__menu {
-      display: none;
-    }
-  
-    &__button.is-open .nav__menu {
-      display: block;
-    }
-  
-    &__button.is-open .nav__close {
-      display: none;
-    }
-  
-    &__pages {
-      display: none;
-  
-      @media screen and (min-width: $tablet) {
-        display: flex;
+  &__link {
+    display: block;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 
-        padding-top: 0;
-        margin: 0;
-        margin-left: 80px;
-        gap: 24px;
-      }
+  .connection {
+    margin-left: auto;
+
+    &__link {
+      display: flex;
+      color: $secondary-text-color;
+    }
+
+    &__icon {
+      width: 22px;
+      height: 22px;
 
       @media screen and (min-width: $desktop) {
-        margin-left: 261px;
-        gap: 48px;
-      }
-    }
-
-  
-    &__link {
-      display: block;
-
-      font-size: 20px;
-      line-height: 1.2;
-
-    }
-  
-    .connection {
-      margin-left: auto;
-
-      &__link {
-        display: flex;
-      }
-
-      &__icon {
-        width: 22px;
-        height: 22px;
-        
-        @media screen and (min-width: $desktop) {
-          width: 28px;
-          height: 28px;
-        }
+        width: 28px;
+        height: 28px;
       }
     }
   }
+}
