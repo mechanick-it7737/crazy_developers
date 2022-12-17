@@ -21,7 +21,6 @@
     transform: translate(-50%, -50%) scale(1);
     background-color: $primary-white-color;
     min-width: 272px;
-    
     padding: 0;
     transition: transform 250ms linear;
   
@@ -29,11 +28,16 @@
     position: absolute;
     left: 95%;
   }
+  &__block {
+    padding-top: 18px;
+    padding-bottom: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   &__text {
     font-size: 19px;
     font-weight: 600;
     text-align: center;
-    margin-top: 18px;
     margin-bottom: 14px;
     color: $primary-text-color;
 
@@ -60,15 +64,51 @@
     border: 1px solid rgba(215, 215, 215, 1);
     width: 235px;
     height: 35px;
-
+    font-size: 12px;
+    padding-left: 10px;
+    font-weight: 500;
   }
  
 }
 @media screen and (min-width: $tablet) {
+  
   .modal {
-    position: absolute;
-    // background-color: aqua;
-    top: 50%;
-    left: 50%;
+  &__block {
+    padding-top: 28px;
+    padding-bottom: 40px;
+    padding-left: 118px;
+    padding-right: 118px;
+  }
+  &__text {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  &__info {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+    &__label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  &__input {
+    
+    margin-bottom: 28px;
+   
+    width: 336px;
+    height: 49px;
+   &::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    
+    @media screen and (min-width: $tablet) {
+      color: transparent;
+
+    }
+    @media screen and (min-width: $desktop) {
+      color: rgba(0, 0, 0, 0.4);
+    }
+   }
+  }
+  
 }
 }
