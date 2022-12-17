@@ -23,8 +23,7 @@
 /* Клонированный слайд */
 .slick-slide.slick-cloned{}
 /* Стрелка */
-.slick__icon{
-}
+.slick-arrow{}
 /* Стрелка влево */
 .slick-arrow.slick-prev{}
 /* Стрелка вправо */
@@ -38,3 +37,49 @@
 .slick-dots li.slick-active{}
 /* Элемент точки */
 .slick-dots li button{}
+
+.slick-prev {
+    &:before {
+        display: none;
+    }
+    &:after {
+        display: none;
+    }
+}
+
+
+.slider {
+    position: relative;
+
+    & .slick-arrow{
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+
+        width: 41px;
+        height: 27px;
+    }
+
+    & .slick-arrow.slick-prev{
+        left: 5px;
+        background: url(../images/prev.svg) 0 0 no-repeat;
+
+        &:before {
+        display: none;
+    }
+    }
+
+    & .slick-arrow.slick-next{
+        right: 5px;
+        background: url(../images/next.svg) 0 0 no-repeat;
+
+        &:before {
+        display: none;
+    }
+    }
+}
+
+.slider-item {
+    max-width: 122px;
+    max-width: 147px;
+}
