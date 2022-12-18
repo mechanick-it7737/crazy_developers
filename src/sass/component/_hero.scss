@@ -1,22 +1,13 @@
-@media screen and (min-width: $mobile) and (max-width: $tablet) {
-}
-@media screen and (min-width: 768px) and (max-width: $desktop) {
-}
-@media screen and (min-width: $desktop) {
-}
-
 .hero {
-
-  &__container {
+  &__box {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: $tablet) and (max-width: $tablet) {
-      padding-top: 44px;
-    }
-    @media screen and (min-width: 768px) and (max-width: $desktop) {
+    padding-top: 44px;
+    
+    @media screen and (min-width: $tablet) {
       padding-top: 38px;
     }
     @media screen and (min-width: $desktop) {
@@ -26,53 +17,48 @@
 
   &__subtitle {
     display: block;
+    margin-left: 11px;
+    margin-right: auto;
 
     font-weight: 400;
-
     color: #000000;
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      margin-right: 14px;
-
-      font-size: 14px;
-      line-height: calc(17 / 14);
-    }
-    @media screen and (min-width: 768px) and (max-width: $desktop) {
-      margin-right: 40px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    @media screen and (min-width: $tablet) {
+      margin-left: 49px;
+      margin-right: auto;
 
       font-size: 24px;
       line-height: calc(29 / 24);
     }
     @media screen and (min-width: $desktop) {
-      margin-right: 110px;
+      margin-left: 210px;
+      margin-right: auto;
 
       font-size: 32px;
       line-height: calc(39 / 32);
     }
   }
-  &__img {
-    justify-content: center;
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      margin-right: 8px;
-    }
-    @media screen and (min-width: 768px) and (max-width: $desktop) {
-      margin-right: 20px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-right: 110px;
-    }
-  }
 
   &__btn {
+    margin-left: auto;
+    margin-right: 0;
+
     background-color: transparent;
+    @media screen and (min-width: $desktop) {
+      margin-right: 145px;
+    }
   }
 
   &__svg {
     fill: $primary-text-color;
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      width: 64px;
-      height: 76px;
-    }
-    @media screen and (min-width: 768px) and (max-width: $desktop) {
+
+    width: 64px;
+    height: 76px;
+
+    transition: fill $cubic;
+
+    @media screen and (min-width: $tablet) {
       width: 145px;
       height: 150px;
     }
@@ -80,28 +66,171 @@
       width: 166px;
       height: 166px;
     }
+    &:hover {
+      fill: $button-hover-color;
+    }
+
+    &:focus {
+      fill: $button-focus-color;
+    }
+  }
+
+  &__title-box {
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    margin-top: -27px;
+    @media screen and (min-width: $tablet) {
+      margin-top: -52px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: -102px;
+    }
   }
 
   &__title {
-    position: absolute;
-    left: auto;
-    right: auto;
     font-weight: 400;
+    font-size: 52px;
+    line-height: calc(63 / 52);
 
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      bottom: 27px;
-      font-size: 52px;
-      line-height: calc(63 / 52);
-    }
-    @media screen and (min-width: 768px) and (max-width: $desktop) {
-      bottom: 0;
+    @media screen and (min-width: $tablet) {
       font-size: 120px;
       line-height: calc(146 / 120);
     }
     @media screen and (min-width: $desktop) {
-      bottom: 0;
       font-size: 160px;
       line-height: calc(195 / 160);
+    }
+  }
+}
+
+.form-hero__btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  font-weight: 600;
+  color: $primary-white-color;
+  background-color: $button-color;
+  border-radius: 8px;
+
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 14px;
+
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 14px;
+
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+}
+
+.close-btn {
+  position: absolute;
+
+  color: transparent;
+  fill: $primary-text-color;
+
+  top: 16px;
+  right: 16px;
+
+  @media screen and (min-width: $tablet) {
+    top: 24px;
+    right: 24px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 24px;
+    right: 24px;
+  }
+
+  &__svg {
+    fill: $primary-text-color;
+
+    width: 18px;
+    height: 18px;
+
+    @media screen and (min-width: $tablet) {
+      width: 24px;
+      height: 24px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.modal-thanks {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  transition: transform $cubic;
+
+  background-color: $primary-white-color;
+
+  padding: 54px 32px;
+  width: 320px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 44px 16px 32px 16px;
+    width: 480px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 44px 16px 32px 16px;
+    width: 480px;
+  }
+
+  &__title {
+    font-weight: 600;
+
+    text-align: center;
+    color: $primary-text-color;
+
+    margin-bottom: 16px;
+
+    margin-bottom: 14px;
+
+    font-size: 20px;
+    line-height: calc(24 / 20);
+
+    @media screen and (min-width: $tablet) {
+      font-size: 32px;
+      line-height: calc(39 / 32);
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 32px;
+      line-height: calc(39 / 32);
+    }
+  }
+
+  &__description {
+    margin-bottom: 18px;
+    text-align: center;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    color: #5c5c5c;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 34px;
+
+      font-size: 16px;
+      line-height: calc(20 / 16);
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: calc(20 / 16);
     }
   }
 }
@@ -116,187 +245,133 @@
   z-index: 3;
 
   background: rgba(0, 0, 0, 0.3);
+  transition: opacity $cubic;
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
-  // .modal {
-  //   transform: translate(-50%, -50%) scale(0.6);
-  // }
 }
 
 .modal-connection {
-  width: 480px;
-
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 48px 32px;
-  outline: 1px solid hotpink;
+
+  transition: transform $cubic;
+
   color: #5c5c5c;
   background-color: $primary-white-color;
 
-  @media screen and (min-width: $mobile) and (max-width: $tablet) {
-    width: 272px;
-    padding: 28px 16px;
-  }
-  @media screen and (min-width: 768px) and (max-width: $desktop) {
-  }
-  @media screen and (min-width: $desktop) {
+  width: 272px;
+  padding: 28px 16px;
+
+  @media screen and (min-width: $tablet) {
+    width: 480px;
+    padding: 48px 32px;
   }
 
   &__title {
-    margin-bottom: 24px;
+    margin-bottom: 14px;
 
     font-weight: 600;
-    font-size: 32px;
-    line-height: calc(39 / 32);
+    font-size: 20px;
+    line-height: calc(24 / 20);
 
     color: $primary-text-color;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 24px;
 
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      margin-bottom: 14px;
-
-      font-size: 20px;
-      line-height: calc(24 / 20);
-    }
-    @media screen and (min-width: 768px) and (max-width: $desktop) {
-    }
-    @media screen and (min-width: $desktop) {
+      font-size: 32px;
+      line-height: calc(39 / 32);
     }
   }
 
   &__discription {
-    margin-bottom: 32px;
+    margin-bottom: 18px;
 
     font-weight: 500;
-    font-size: 16px;
-    line-height: calc(20 / 16);
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
 
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      margin-bottom: 18px;
-
-      font-size: 12px;
-      line-height: calc(15 / 12);
-    }
-    @media screen and (min-width: 768px) and (max-width: $desktop) {
-    }
-    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: calc(20 / 16);
     }
   }
 }
+
 .form-connection {
   &__name {
     margin-bottom: 8px;
 
     font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 10px;
+    line-height: calc(12 / 10);
 
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      font-size: 10px;
-      line-height: calc(12 / 10);
-    }
-    @media screen and (min-width: 768px) and (max-width: $desktop) {
-    }
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: calc(17 / 14);
     }
   }
 
   &__field {
     width: 100%;
+    padding: 10px 0 10px 12px;
+    margin-bottom: 14px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    outline: none;
     border: 1px solid #d7d7d7;
     border-radius: 4px;
-    margin-bottom: 24px;
-    padding: 16px 0 16px 16px;
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      padding: 10px 0 10px 12px;
-      margin-bottom: 14px;
-    }
-    @media screen and (min-width: 768px) and (max-width: $desktop) {
-    }
-    @media screen and (min-width: $desktop) {
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 24px;
+      padding: 16px 0 16px 16px;
+
+      font-size: 14px;
+      line-height: calc(17 / 14);
     }
   }
 
   &__field::placeholder {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(17 / 14);
-
     color: rgba(0, 0, 0, 0.4);
-
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      font-size: 12px;
-      line-height: calc(15 / 12);
-    }
-    @media screen and (min-width: 768px) and (max-width: $desktop) {
-    }
-    @media screen and (min-width: $desktop) {
-    }
   }
 }
 
-.form-hero__btn {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  padding-bottom: 10px;
-  padding-top: 14px;
-
-  font-weight: 600;
-  font-size: 18px;
-  line-height: calc(22 / 18);
-
-  color: $primary-white-color;
-  background-color: $button-color;
-  border-radius: 8px;
-
-  @media screen and (min-width: $mobile) and (max-width: $tablet) {
-    padding-bottom: 10px;
-    padding-top: 10px;
-
-    font-size: 14px;
-    line-height: calc(17 / 14);
-  }
-  @media screen and (min-width: 768px) and (max-width: $desktop) {
-  }
-  @media screen and (min-width: $desktop) {
-  }
+.form-connection__field:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+.form-connection__field:invalid:not(:placeholder-shown) {
+  border-color: $button-hover-color;
 }
 
 .close-btn {
   position: absolute;
-  top: 24px;
-  right: 24px;
 
-  color: transparent;
+  top: 16px;
+  right: 16px;
+
+  background-color: transparent;
   fill: $primary-text-color;
-  @media screen and (min-width: $mobile) and (max-width: $tablet) {
-    top: 16px;
-    right: 16px;
-  }
-  @media screen and (min-width: 768px) and (max-width: $desktop) {
-  }
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
+    top: 24px;
+    right: 24px;
   }
 
   &__svg {
-    fill: $primary-text-color;
 
-    width: 24px;
-    height: 24px;
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      width: 18px;
-      height: 18px;
-    }
-    @media screen and (min-width: 768px) and (max-width: $desktop) {
-    }
-    @media screen and (min-width: $desktop) {
+    width: 18px;
+    height: 18px;
+    @media screen and (min-width: $tablet) {
+      width: 24px;
+      height: 24px;
     }
   }
 }
@@ -307,58 +382,67 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 44px 16px 32px 16px;
-  width: 480px;
 
   background-color: $primary-white-color;
-  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+  width: 272px;
+
+  @media screen and (min-width: $tablet) {
+    width: 480px;
     padding: 54px 32px;
-    width: 320px;
+  }
+
+  &__box {
+    width: 188px;
+    height: 142px;
+    margin: 0 auto 16px auto;
+    @media screen and (min-width: $tablet) {
+      width: 367px;
+      height: 202px;
+    }
   }
 
   &__title {
     font-weight: 600;
-    font-size: 32px;
-    line-height: calc(39 / 32);
+    font-size: 20px;
+    line-height: calc(24 / 20);
 
     text-align: center;
     color: $primary-text-color;
 
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 16px;
 
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      margin-bottom: 14px;
-
-      font-size: 20px;
-      line-height: calc(24 / 20);
-    }
-    @media screen and (min-width: 768px) and (max-width: $desktop) {
-    }
-    @media screen and (min-width: $desktop) {
+      font-size: 32px;
+      line-height: calc(39 / 32);
     }
   }
 
-  // &__title::before {
-  //   content: "";
-  //   background-image: ;
-  // }
-
   &__description {
-    margin-bottom: 34px;
+    margin-bottom: 18px;
+
     font-weight: 500;
-    font-size: 16px;
-    line-height: calc(20 / 16);
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
     text-align: center;
 
     color: #5c5c5c;
-    @media screen and (min-width: $mobile) and (max-width: $tablet) {
-      margin-bottom: 18px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 34px;
 
-      font-size: 12px;
-      line-height: calc(15 / 12);
+      font-size: 16px;
+      line-height: calc(20 / 16);
     }
-    @media screen and (min-width: 768px) and (max-width: $desktop) {
-    }
-    @media screen and (min-width: $desktop) {
-    }
+  }
+}
+
+.modal__button {
+  &:hover {
+    background-color: $button-hover-color;
+  }
+
+  &:focus {
+    background-color: $button-focus-color;
   }
 }

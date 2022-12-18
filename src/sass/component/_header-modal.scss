@@ -32,8 +32,13 @@
     &--link {
       font-size: 20px;
       line-height: 1.21;
-
       color: $primary-white-color;
+      transition: color $cubic;
+
+      &:hover,
+      &:focus {
+        color: rgba(255, 255, 255, 0.6);
+      }
     }
 
     &--item {
@@ -51,6 +56,13 @@
 
     &--icon {
       cursor: pointer;
+      stroke: white;
+      transition: stroke $cubic;
+
+      &:hover,
+      &:focus {
+        stroke: rgba(255, 255, 255, 0.6);
+      }
     }
   }
 }

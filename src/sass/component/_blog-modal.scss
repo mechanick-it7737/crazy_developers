@@ -1,0 +1,137 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000033;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 250ms linear, opacity 250ms linear;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: $primary-white-color;
+  width: 100%;
+  max-width: 272px;
+  padding: 0;
+  transition: transform 250ms linear;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 588px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 860px;
+    display: flex;
+  }
+}
+
+  .modal__close {
+    position: absolute;
+    left: 88%;
+    top: 4%;
+    stroke: currentColor;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    transition: stroke $cubic;
+
+    &:hover,
+    &:focus {
+      stroke: rgba(0, 0, 0, 0.3);
+    }
+
+    @media screen and (min-width: $tablet) {
+      left: 94%;
+      top: 4%;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .modal__block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px 16px 28px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 28px 118px 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 111px 40px 112px;
+    }
+  }
+
+  .modal__text {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.22;
+    text-align: center;
+    margin-bottom: 14px;
+    color: $primary-text-color;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 28px;
+    }
+  }
+
+  .modal__info {
+    font-size: 12px;
+    line-height: 1.31;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(92, 92, 92, 1);
+    margin-bottom: 18px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+    }
+  }
+  // &__label {
+  //   display: block;
+  //   color: rgba(92, 92, 92, 1);
+  //   font-size: 10px;
+  //   font-weight: 500;
+  //   margin-bottom: 8px;
+  // }
+  
+  // &__input {
+  //   color: rgba(0, 0, 0, 0.4);
+  //   margin-bottom: 18px;
+  //   border-radius: 4px;
+  //   border: 1px solid rgba(215, 215, 215, 1);
+  //   width: 100%;
+  //   height: 35px;
+  //   font-size: 12px;
+  //   padding-left: 10px;
+  //   font-weight: 500;
+
+  //   &::placeholder {
+  //     color: rgba(0, 0, 0, 0.4);
+  //     @media screen and (min-width: $tablet) {
+  //       color: transparent;
+  //     }
+  //     @media screen and (min-width: $desktop) {
+  //       color: rgba(0, 0, 0, 0.4);
+  //     }
+  //   }
+  // }
+
+  img {
+    @media screen and (min-width: $desktop) {
+      width: 428px;
+    }
+  }
