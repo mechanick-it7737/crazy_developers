@@ -11,7 +11,12 @@ $(document).ready(function () {
     pauseOnFocus:true, 
     pauseOnHover: true,
     pauseOnDotsHover: true,
-    draggable: false,
-    
+    draggable: false
   });
+
+  $('.sliderbig').slick({
+    arrows: false,
+    fade:true
+    
+})
 });
