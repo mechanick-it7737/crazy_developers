@@ -4,6 +4,8 @@
 @import './base/general-classes';
 @import './component/header';
 @import './component/hero';
+@import './component/modal-connection';
+@import './component/modal-thanks';
 @import './component/about';
 @import './component/store';
 @import './component/delivery';
@@ -11,6 +13,5 @@
 @import './component/footer';
 @import './component/mobile-menu';
 @import './component/blog-modal';
-@import './component/modal-connection';
-@import './component/modal-thanks';
+@import './component/backdrop';
 
