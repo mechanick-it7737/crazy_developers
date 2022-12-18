@@ -35,7 +35,7 @@ section {
   align-items: center;
 
   margin-bottom: 32px;
-  
+
   font-size: 24px;
   line-height: 1.2;
 
@@ -53,11 +53,11 @@ section {
 
   &::after {
     content: '';
-    
+
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    
+
     margin-left: 14px;
 
     height: 1px;
@@ -66,37 +66,35 @@ section {
   }
 }
 
-
 .content__button {
-    display: block;
-    padding: 14px 28px;
-    width: 208px;
+  display: block;
+  padding: 14px 28px;
+  width: 208px;
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-color: $button-color;
-    border-radius: 38px;
+  background-color: $button-color;
+  border-radius: 38px;
 
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 28);
 
-    font-weight: 500;
-    font-size: 20px;
-    line-height: calc(24 / 28);
+  box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
+  color: $primary-white-color;
 
-    box-shadow: 0px 4px 16px rgba(250, 111, 84, 0.2);
-    color: $primary-white-color;
+  &:hover {
+    background-color: $button-hover-color;
+  }
 
-    &:hover {
-        background-color: $button-hover-color;
-    }
+  &:focus {
+    background-color: $button-focus-color;
+  }
 
-    &:focus {
-        background-color: $button-focus-color;
-    }
-
-    @media screen and(min-width: $tablet) {
-        padding: 16px 32px;
-    }
+  @media screen and(min-width: $tablet) {
+    padding: 16px 32px;
+  }
 }
 
 .modal__button {
@@ -124,24 +122,24 @@ section {
 }
 
 .modal__close {
-    position: absolute;
-    right: 16px;
-    top: 16px;
-    stroke: currentColor;
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-    transition: stroke $cubic;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  stroke: currentColor;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  transition: stroke $cubic;
 
-    &:hover,
-    &:focus {
-      stroke: rgba(0, 0, 0, 0.3);
-    }
-
-    @media screen and (min-width: $tablet) {
-      right: 24px;
-      top: 24px;
-      width: 24px;
-      height: 24px;
-    }
+  &:hover,
+  &:focus {
+    stroke: rgba(0, 0, 0, 0.3);
   }
+
+  @media screen and (min-width: $tablet) {
+    right: 24px;
+    top: 24px;
+    width: 24px;
+    height: 24px;
+  }
+}
