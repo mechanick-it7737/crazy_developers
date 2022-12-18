@@ -354,6 +354,7 @@
 
 .close-btn {
   position: absolute;
+
   top: 16px;
   right: 16px;
 
@@ -365,8 +366,6 @@
   }
 
   &__svg {
-    fill: $primary-text-color;
-    stroke: $primary-text-color;
 
     width: 18px;
     height: 18px;
