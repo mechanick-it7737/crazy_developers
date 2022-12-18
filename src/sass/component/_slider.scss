@@ -107,6 +107,9 @@
 }
 
 .sliderbig {
+    @media screen and (max-width: $desktop) {
+        display: none;
+    }
     &__item {
         text-align: center;
     }
