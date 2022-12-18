@@ -122,3 +122,26 @@ section {
   @media screen and (min-width: $desktop) {
   }
 }
+
+.modal__close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    stroke: currentColor;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    transition: stroke $cubic;
+
+    &:hover,
+    &:focus {
+      stroke: rgba(0, 0, 0, 0.3);
+    }
+
+    @media screen and (min-width: $tablet) {
+      right: 24px;
+      top: 24px;
+      width: 24px;
+      height: 24px;
+    }
+  }

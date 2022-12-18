@@ -42,7 +42,6 @@
 
   &__btn {
     margin-left: auto;
-    margin-right: 0;
 
     background-color: transparent;
     @media screen and (min-width: $desktop) {
@@ -51,7 +50,7 @@
   }
 
   &__svg {
-    fill: currentColor;
+    fill: cu;
 
     width: 64px;
     height: 76px;
