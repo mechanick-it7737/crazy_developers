@@ -1,3 +1,4 @@
+
 $(document).ready(function () { 
   $('.slider').slick({
     arrows: true,
@@ -11,12 +12,7 @@ $(document).ready(function () {
     pauseOnFocus:true, 
     pauseOnHover: true,
     pauseOnDotsHover: true,
-    draggable: false
+    draggable: false,
+    centerMode: true
   });
-
-  $('.sliderbig').slick({
-    arrows: false,
-    fade:true
-    
-})
 });

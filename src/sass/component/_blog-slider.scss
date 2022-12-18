@@ -22,19 +22,18 @@
   position: relative;
 
   &__item {
-    margin-right: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     text-align: center;
 
     transition: all $cubic;
     opacity: 0.4;
+    transform: scale(0.7);
 
     &.slick-center {
       opacity: 1;
-    }
-
-    @media screen and (min-width: $tablet) {
-      margin-right: 32px;  
+      transform: scale(1);
     }
   }
 
@@ -64,16 +63,4 @@
       display: none;
     }
   }
-}
-
-.sliderbig {
-    width: 450px;
-    height: 509px;
-
-    margin-bottom: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    @media screen and (max-width: $desktop) {
-        display: none;
-    }
 }
