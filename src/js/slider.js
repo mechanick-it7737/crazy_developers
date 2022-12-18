@@ -11,12 +11,14 @@ $(document).ready(function () {
     pauseOnFocus:true, 
     pauseOnHover: true,
     pauseOnDotsHover: true,
-    draggable: false
+    draggable: false,
+    centerMode:true,
+    asNavFor: ".sliderbig"
   });
 
   $('.sliderbig').slick({
     arrows: false,
-    fade:true
-    
+    fade: true,
+    asNavFor:".slider"
 })
 });
