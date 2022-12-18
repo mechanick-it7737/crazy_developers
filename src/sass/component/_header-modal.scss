@@ -33,7 +33,7 @@
       font-size: 20px;
       line-height: 1.21;
       color: $primary-white-color;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: color $cubic;
 
       &:hover,
       &:focus {
@@ -57,7 +57,7 @@
     &--icon {
       cursor: pointer;
       stroke: white;
-      transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: stroke $cubic;
 
       &:hover,
       &:focus {
