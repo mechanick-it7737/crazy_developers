@@ -62,7 +62,16 @@
         margin-right: 96px;
     }
 }
-
+.footer-navigation__link {
+    transition: color $cubic;
+    &:hover {
+            color: $button-hover-color;
+        }
+    
+        &:focus {
+            color: $button-focus-color;
+        }
+}
 .footer-thumb__contacts {
     display: flex;
     width: 100%;
@@ -92,6 +101,7 @@
 .footer__contacts--link {
     display: flex;
     flex-wrap: wrap;
+    transition: color $cubic;
     &:hover {
             color: $button-hover-color;
         }
@@ -103,15 +113,6 @@
 
 .footer__link {
     display: none;
-
-    &:hover {
-        color: $button-hover-color;
-
-    }
-
-    &:focus {
-        color: $button-focus-color;
-    }
 
     @media screen and(min-width:$desktop) {
         display: block;
@@ -158,6 +159,7 @@
 }
 
 .footer-social__link {
+    transition: color $cubic;
     &:hover {
         color: $button-hover-color;
     }
