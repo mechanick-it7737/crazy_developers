@@ -1,40 +1,117 @@
 /* Слайдер */
-.slick-slider{}
+.slick-slider {
+}
 /* Слайдер запущен */
-.slick-slider.slick-initialized{}
+.slick-slider.slick-initialized {
+}
 /* Слайдер с точками */
-.slick-slider.slick-dotted{}
+.slick-slider.slick-dotted {
+}
 /* Ограничивающая оболочка */
 .slick-list {
-    overflow: hidden;
+  overflow: hidden;
 }
 /* Лента слайдов */
-.slick-track{
-    display: flex;
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 /* Слайд */
-.slick-slide{}
+.slick-slide {
+}
 /* Слайд активный (показывается) */
-.slick-slide.slick-active{}
+.slick-slide.slick-active {
+}
 /* Слайд основной */
-.slick-slide.slick-current{}
+.slick-slide.slick-current {
+}
 /* Слайд по центру */
-.slick-slide.slick-center{}
+.slick-slide.slick-center {
+}
 /* Клонированный слайд */
-.slick-slide.slick-cloned{}
+.slick-slide.slick-cloned {
+}
 /* Стрелка */
-.slick__icon{
+.slick-arrow {
 }
 /* Стрелка влево */
-.slick-arrow.slick-prev{}
+.slick-arrow.slick-prev {
+}
 /* Стрелка вправо */
-.slick-arrow.slick-next{}
+.slick-arrow.slick-next {
+}
 /* Стрелка не активная */
-.slick-arrow.slick-disabled{}
+.slick-arrow.slick-disabled {
+}
 /* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
+.slick-dots {
+}
+.slick-dots li {
+}
 /* Активная точка */
-.slick-dots li.slick-active{}
+.slick-dots li.slick-active {
+}
 /* Элемент точки */
-.slick-dots li button{}
+.slick-dots li button {
+}
+
+.slick-prev {
+  &:before {
+    display: none;
+  }
+  &:after {
+    display: none;
+  }
+}
+
+.slider {
+  position: relative;
+
+  &__item {
+    margin-right: 8px;
+
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 32px;  
+    }
+  }
+
+  & .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+
+    width: 41px;
+    height: 27px;
+  }
+
+  & .slick-arrow.slick-prev {
+    left: 5px;
+    background: url(../images/prev.svg) 0 0 no-repeat;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  & .slick-arrow.slick-next {
+    right: 5px;
+    background: url(../images/next.svg) 0 0 no-repeat;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.sliderbig {
+    @media screen and (max-width: $desktop) {
+        display: none;
+    }
+    &__item {
+        text-align: center;
+    }
+
+}
