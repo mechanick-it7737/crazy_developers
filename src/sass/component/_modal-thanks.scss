@@ -1,0 +1,70 @@
+.modal-thanks {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 44px 16px 32px 16px;
+
+  background-color: $primary-white-color;
+  width: 272px;
+
+  @media screen and (min-width: $tablet) {
+    width: 480px;
+    padding: 54px 32px;
+  }
+
+  &__box {
+    width: 188px;
+    height: 142px;
+    margin: 0 auto 16px auto;
+    @media screen and (min-width: $tablet) {
+      width: 367px;
+      height: 202px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+
+    text-align: center;
+    color: $primary-text-color;
+
+    margin-bottom: 14px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 16px;
+
+      font-size: 32px;
+      line-height: calc(39 / 32);
+    }
+  }
+
+  &__description {
+    margin-bottom: 18px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    text-align: center;
+
+    color: #5c5c5c;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 34px;
+
+      font-size: 16px;
+      line-height: calc(20 / 16);
+    }
+  }
+}
+
+.modal__button {
+  &:hover {
+    background-color: $button-hover-color;
+  }
+
+  &:focus {
+    background-color: $button-focus-color;
+  }
+}
