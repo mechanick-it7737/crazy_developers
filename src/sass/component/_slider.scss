@@ -69,10 +69,13 @@
   position: relative;
 
   &__item {
-    max-width: 122px;
-    max-width: 147px;
+    margin-right: 8px;
 
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 32px;  
+    }
   }
 
   & .slick-arrow {

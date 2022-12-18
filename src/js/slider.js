@@ -3,7 +3,7 @@ $(document).ready(function () {
     arrows: true,
     adaptiveHight: true,
     slidesToShow:3,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     spped: 1000,
     infinite: true,
     autoplay: true,
@@ -12,6 +12,6 @@ $(document).ready(function () {
     pauseOnHover: true,
     pauseOnDotsHover: true,
     draggable: false,
-    variableWidth:false
+    
   });
 });
