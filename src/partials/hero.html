@@ -28,7 +28,7 @@
         <img src="./images/image_hero.jpg" alt="Главное фото цветка" />
       </picture>
 
-      <button class="hero__btn" data-modal-open>
+      <button class="hero__btn" data-modal-open type="button">
         <svg class="hero__svg">
           <use href="./images/sprite.svg#iconbutton"></use>
         </svg>
@@ -42,11 +42,12 @@
 
 <div class="backdrop is-hidden" data-modal>
   <div class="modal-connection">
-    <button class="close-btn">
-      <svg class="close-btn__svg" data-modal-close>
+      <svg class="modal__close" data-modal-close>
         <use href="./images/sprite.svg#iconmodal-close"></use>
       </svg>
-    </button>
+      <!-- <svg class="close-btn__svg" data-modal-close>
+        <use href="./images/sprite.svg#iconmodal-close"></use>
+      </svg> -->
     <p class="modal-connection__title">Contact us</p>
     <p class="modal-connection__discription">
       If you have any additional questions or you want to clarify something
