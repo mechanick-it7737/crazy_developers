@@ -92,7 +92,12 @@
     font-size: 12px;
     padding-left: 10px;
     font-weight: 500;
-
+    .form-connection__input:valid:not(:placeholder-shown) {
+      border-color: green;
+    }
+    .form-connection__input:invalid:not(:placeholder-shown) {
+      border-color: $button-hover-color;
+    }
   &::placeholder {
       color: rgba(0, 0, 0, 0.4);
   @media screen and (min-width: $tablet) {
