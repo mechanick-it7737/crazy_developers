@@ -2,8 +2,8 @@
 $(document).ready(function () { 
   $('.slider').slick({
     arrows: true,
-    adaptiveHight: true,
-    slidesToShow:1,
+    adaptiveHight: false,
+    slidesToShow:3,
     slidesToScroll: 1,
     spped: 1000,
     infinite: true,
@@ -13,6 +13,15 @@ $(document).ready(function () {
     pauseOnHover: true,
     pauseOnDotsHover: true,
     draggable: false,
-    centerMode: true
+    centerMode: true,
+
+      responsive: [
+    {
+      breakpoint: 767.98,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
   });
 });
