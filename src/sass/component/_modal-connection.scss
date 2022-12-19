@@ -1,0 +1,117 @@
+.modal-connection {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 272px;
+  padding: 28px 16px;
+
+  transition: transform $cubic;
+
+  color: #5c5c5c;
+  background-color: $primary-white-color;
+
+  @media screen and (min-width: $tablet) {
+    width: 480px;
+    padding: 48px 32px;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+
+    color: $primary-text-color;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 24px;
+
+      font-size: 32px;
+    }
+  }
+
+  &__discription {
+    margin-bottom: 18px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
+
+      font-size: 16px;
+    }
+  }
+}
+
+.form-connection {
+  &__name {
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 10px;
+    line-height: calc(12 / 10);
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+  }
+
+  &__field {
+    width: 100%;
+    padding: 10px 0 10px 12px;
+    margin-bottom: 14px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    outline: none;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 24px;
+      padding: 16px 0 16px 16px;
+
+      font-size: 14px;
+    }
+  }
+
+  &__field::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.form-connection__field:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+.form-connection__field:invalid:not(:placeholder-shown) {
+  border-color: $button-hover-color;
+}
+
+.close-btn {
+  position: absolute;
+
+  top: 16px;
+  right: 16px;
+
+  background-color: transparent;
+  fill: $primary-text-color;
+
+  @media screen and (min-width: $tablet) {
+    top: 24px;
+    right: 24px;
+  }
+
+  &__svg {
+    @media screen and (min-width: $tablet) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

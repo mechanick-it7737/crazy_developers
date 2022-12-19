@@ -13,14 +13,20 @@ ul {
   margin: 0;
 }
 
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
 img {
-  display: block;
   width: 100%;
+  display: block;
 }
 
 address {

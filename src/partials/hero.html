@@ -1,116 +1,42 @@
-<section class="hero" id="title-1">
+
+<section class="hero"
+         id="title-1">
   <div class="container">
     <div class="hero__box">
       <p class="hero__subtitle">
-        flower <br />
+        flower <br>
+
         studio
       </p>
 
       <picture class="hero__img">
-        <source
-          srcset="./images/image_hero.jpg 1x, ./images/image_hero@x2.jpg 2x"
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
+        <source srcset="./images/image_hero.jpg 1x, ./images/image_hero@x2.jpg 2x"
+                media="(min-width: 1200px)" />
+        <source srcset="
             ./images/image_hero_tablet.jpg    1x,
             ./images/image_hero_tablet@x2.jpg 2x
           "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
+                media="(min-width: 768px)" />
+        <source srcset="
             ./images/image_hero_mobile.jpg    1x,
             ./images/image_hero_mobile@x2.jpg 2x
           "
-          media="(max-width: 767px)"
-        />
-        <img src="./images/image_hero.jpg" alt="Главное фото цветка" />
+                media="(max-width: 767px)" />
+        <img src="./images/image_hero.jpg"
+             alt="Главное фото цветка" />
       </picture>
 
-      <button class="hero__btn" data-modal-open>
-        <svg class="hero__svg">
+      <button class="hero__btn"
+              data-modal-open
+              type="button"
+              id="openOrderFromHero">
+        <svg class="hero__svg" width="64" height="76">
           <use href="./images/sprite.svg#iconbutton"></use>
         </svg>
       </button>
     </div>
-    <div class="hero__title-box">
-      <h1 class="hero__title">ANEMONE</h1>
-    </div>
+    <h1 class="hero__title">ANEMONE</h1>
   </div>
 </section>
+<source>
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal-connection">
-    <button class="close-btn">
-      <svg class="close-btn__svg" data-modal-close>
-        <use href="./images/sprite.svg#iconmodal-close"></use>
-      </svg>
-    </button>
-    <p class="modal-connection__title">Contact us</p>
-    <p class="modal-connection__discription">
-      If you have any additional questions or you want to clarify something
-      before you make an order please fill in your contact details. We will call
-      you back.
-    </p>
-
-    <form class="form-connection">
-      <label for="name" class="form-connection__label">
-        <p class="form-connection__name">Name</p>
-        <input
-          type="text"
-          class="form-connection__field"
-          placeholder="Your name"
-          name="name"
-          id="name"
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-          autocomplete="off"
-        />
-      </label>
-      <label for="email" class="form-connection__label">
-        <p class="form-connection__name">Email</p>
-        <input
-          type="email"
-          class="form-connection__field"
-          placeholder="Your email"
-          name="email"
-          id="email"
-          autocomplete="off"
-        />
-      </label>
-      <button class="modal__button" type="submit">Send</button>
-    </form>
-  </div>
-
-  <div class="modal-thanks">
-    <button class="close-btn">
-      <svg class="close-btn__svg" data-modal-close>
-        <use href="./images/sprite.svg#iconmodal-close"></use>
-      </svg>
-    </button>
-    <div class="modal-thanks__box">
-      <picture class="modal-thanks__img">
-        <source
-          srcset="
-            ./images/modal-tablet-thank.png    1x,
-            ./images/modal-tablet-thank@x2.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/modal-mobile-thank.png    1x,
-            ./images/modal-mobile-thank@x2.png 2x
-          "
-          media="(max-width: 767px)"
-        />
-        <img src="./images/modal-mobile-thank.png" alt="Главное фото цветка" />
-      </picture>
-    </div>
-    <p class="modal-thanks__title">Thank you!</p>
-    <p class="modal-thanks__description">
-      We have received your contact details and will reach you soon.
-    </p>
-    <button class="modal__button" type="submit">Continue</button>
-  </div>
-</div>

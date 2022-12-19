@@ -10,25 +10,25 @@
   &:last-child {
     margin-bottom: 26px;
   }
-  
+
   @media screen and (min-width: $tablet) {
     &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+      margin-bottom: 20px;
+    }
 
-  &:last-child {
-    margin-bottom: 40px;
-  }
+    &:last-child {
+      margin-bottom: 40px;
+    }
   }
 
   @media screen and (min-width: $desktop) {
     &:not(:last-child) {
-    margin-bottom: 32px;
-  }
+      margin-bottom: 32px;
+    }
 
-  &:last-child {
-    margin-bottom: 60px;
-  }
+    &:last-child {
+      margin-bottom: 60px;
+    }
   }
 }
 
