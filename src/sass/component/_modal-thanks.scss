@@ -17,6 +17,7 @@
     width: 188px;
     height: 142px;
     margin: 0 auto 16px auto;
+
     @media screen and (min-width: $tablet) {
       width: 367px;
       height: 202px;
@@ -24,6 +25,8 @@
   }
 
   &__title {
+    margin-bottom: 14px;
+
     font-weight: 600;
     font-size: 20px;
     line-height: calc(24 / 20);
@@ -31,12 +34,10 @@
     text-align: center;
     color: $primary-text-color;
 
-    margin-bottom: 14px;
     @media screen and (min-width: $tablet) {
       margin-bottom: 16px;
 
       font-size: 32px;
-      line-height: calc(39 / 32);
     }
   }
 
@@ -54,7 +55,6 @@
       margin-bottom: 34px;
 
       font-size: 16px;
-      line-height: calc(20 / 16);
     }
   }
 }

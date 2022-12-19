@@ -1,6 +1,6 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal-connection">
-    <svg class="modal__close" data-modal-close>
+    <svg class="modal__close" aria-label="icon-close" data-modal-close width="18" height="18">
       <use href="./images/sprite.svg#iconmodal-close"></use>
     </svg>
     <p class="modal-connection__title">Contact us</p>
@@ -12,7 +12,7 @@
 
     <form class="form-connection">
       <label for="name" class="form-connection__label">
-        <p class="form-connection__name">Name</p>
+        <span class="form-connection__name">Name</span>
         <input
           type="text"
           class="form-connection__field"
@@ -21,10 +21,10 @@
           id="name"
           pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
           autocomplete="off"
-        />
+        >
       </label>
       <label for="email" class="form-connection__label">
-        <p class="form-connection__name">Email</p>
+        <span class="form-connection__name">Email</span>
         <input
           type="email"
           class="form-connection__field"
@@ -32,7 +32,7 @@
           name="email"
           id="email"
           autocomplete="off"
-        />
+        >
       </label>
       <button class="modal__button" type="submit">Send</button>
     </form>

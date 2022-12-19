@@ -1,28 +1,36 @@
 .footer {
+  max-width: 480px;
+
+  margin: 0 auto;
   padding: 32px 0;
-  background-color: #000000;
+
   font-family: 'Inter';
-  color: $primary-white-color;
 
   font-weight: 500;
   font-size: 14px;
   line-height: calc(17 / 14);
 
+  color: $primary-white-color;
+  background-color: #000000;
+
   @media screen and(min-width: $tablet) {
+    max-width: 768px;
+
     padding-top: 60px;
     padding-bottom: 54px;
+
     font-size: 16px;
-    line-height: calc(19 / 16);
   }
 
   @media screen and(min-width: $desktop) {
+    max-width: 1280px;
+    
     padding-top: 73px;
     padding-bottom: 72px;
   }
 }
 
-.footer-container {
-  @extend .container;
+.footer-wrap {
   display: flex;
   flex-wrap: wrap;
   row-gap: 32px;
@@ -32,7 +40,7 @@
   }
 }
 
-.footer-thumb_navigation {
+.footer-thumb__nav {
   display: flex;
   width: 100%;
 
@@ -46,7 +54,7 @@
   }
 }
 
-.footer-navigation {
+.footer-nav {
   margin-right: auto;
 
   @media screen and(min-width: $tablet) {
@@ -94,6 +102,7 @@
 .footer__contacts--link {
   display: flex;
   flex-wrap: wrap;
+
   transition: color $cubic;
   &:hover {
     color: $button-hover-color;
@@ -109,6 +118,7 @@
 
   @media screen and(min-width:$desktop) {
     display: block;
+
     margin-right: 210px;
   }
 }
@@ -118,15 +128,14 @@
 }
 
 .footer-subtitle {
+  margin-bottom: 18px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: calc(22 / 18);
 
-  margin-bottom: 18px;
-
   @media screen and(min-width: $tablet) {
     font-size: 20px;
-    line-height: calc(24 / 20);
   }
 }
 
@@ -139,6 +148,7 @@
 .footer__work-time {
   @media screen and(min-width: $tablet) {
     min-width: 143px;
+
     margin-right: 44px;
   }
 
@@ -172,12 +182,14 @@
 
 .footer__social-list {
   display: flex;
+
   margin-right: 58px;
   gap: 14px;
 
   @media screen and(min-width: $tablet) {
     flex-direction: column;
     gap: 18px;
+
     margin-right: unset;
   }
 

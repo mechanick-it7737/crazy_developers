@@ -2,34 +2,31 @@
   <div class="container">
     <div class="hero__box">
       <p class="hero__subtitle">
-        flower <br />
+        flower <br>
         studio
       </p>
 
       <picture class="hero__img">
         <source
           srcset="./images/image_hero.jpg 1x, ./images/image_hero@x2.jpg 2x"
-          media="(min-width: 1200px)"
-        />
+          media="(min-width: 1200px)">
         <source
           srcset="
             ./images/image_hero_tablet.jpg    1x,
             ./images/image_hero_tablet@x2.jpg 2x
           "
-          media="(min-width: 768px)"
-        />
+          media="(min-width: 768px)">
         <source
           srcset="
             ./images/image_hero_mobile.jpg    1x,
             ./images/image_hero_mobile@x2.jpg 2x
           "
-          media="(max-width: 767px)"
-        />
-        <img src="./images/image_hero.jpg" alt="Главное фото цветка" />
+          media="(max-width: 767px)">
+        <img src="./images/image_hero.jpg" alt="The main photo of the flower">
       </picture>
 
       <button class="hero__btn" data-modal-open type="button">
-        <svg class="hero__svg">
+        <svg class="hero__svg" aria-label="modal-button" width="64" height="76">
           <use href="./images/sprite.svg#iconbutton"></use>
         </svg>
       </button>
@@ -39,3 +36,4 @@
     </div>
   </div>
 </section>
+<source>

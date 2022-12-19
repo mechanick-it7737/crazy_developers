@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
 
@@ -32,6 +33,7 @@
     &--link {
       font-size: 20px;
       line-height: 1.21;
+      
       color: $primary-white-color;
       transition: color $cubic;
 

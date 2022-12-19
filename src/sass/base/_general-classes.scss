@@ -4,12 +4,16 @@ body {
 }
 
 section {
-  max-width: 1280px;
+  max-width: 480px;
   margin: 0 auto;
   padding-bottom: 60px;
 
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+  }
+
   @media screen and (min-width: $desktop) {
-    padding-bottom: 100px;
+    max-width: 1280px;
   }
 }
 
@@ -125,9 +129,8 @@ section {
   position: absolute;
   right: 16px;
   top: 16px;
+
   stroke: currentColor;
-  width: 18px;
-  height: 18px;
   cursor: pointer;
   transition: stroke $cubic;
 
@@ -139,6 +142,7 @@ section {
   @media screen and (min-width: $tablet) {
     right: 24px;
     top: 24px;
+
     width: 24px;
     height: 24px;
   }

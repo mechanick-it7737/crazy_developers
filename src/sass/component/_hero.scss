@@ -1,6 +1,7 @@
 .hero {
   &__box {
     position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,26 +18,27 @@
 
   &__subtitle {
     display: block;
+
     margin-left: 11px;
     margin-right: auto;
 
-    font-weight: 400;
-    color: #000000;
+    
     font-size: 14px;
     line-height: calc(17 / 14);
+
+    color: $primary-text-color;
+
     @media screen and (min-width: $tablet) {
       margin-left: 49px;
       margin-right: auto;
 
       font-size: 24px;
-      line-height: calc(29 / 24);
     }
     @media screen and (min-width: $desktop) {
       margin-left: 210px;
       margin-right: auto;
 
       font-size: 32px;
-      line-height: calc(39 / 32);
     }
   }
 
@@ -50,10 +52,7 @@
   }
 
   &__svg {
-    fill: cu;
-
-    width: 64px;
-    height: 76px;
+    fill: currentColor;
 
     transition: fill $cubic;
 
@@ -76,9 +75,12 @@
 
   &__title-box {
     position: relative;
-    text-align: center;
+
     z-index: 0;
     margin-top: -27px;
+
+    text-align: center;
+
     @media screen and (min-width: $tablet) {
       margin-top: -52px;
     }
@@ -105,41 +107,40 @@
 
 .form-hero__btn {
   display: flex;
+justify-content: center;
+
   width: 100%;
-  justify-content: center;
+  
   padding-bottom: 10px;
   padding-top: 10px;
 
   font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
   color: $primary-white-color;
   background-color: $button-color;
   border-radius: 8px;
-
-  font-size: 14px;
-  line-height: calc(17 / 14);
 
   @media screen and (min-width: $tablet) {
     padding-top: 14px;
 
     font-size: 18px;
-    line-height: calc(22 / 18);
   }
   @media screen and (min-width: $desktop) {
     padding-top: 14px;
 
     font-size: 18px;
-    line-height: calc(22 / 18);
   }
 }
 
 .close-btn {
   position: absolute;
+  top: 16px;
+  right: 16px;
 
   color: transparent;
   fill: $primary-text-color;
-
-  top: 16px;
-  right: 16px;
 
   @media screen and (min-width: $tablet) {
     top: 24px;
@@ -153,9 +154,6 @@
   &__svg {
     fill: $primary-text-color;
 
-    width: 18px;
-    height: 18px;
-
     @media screen and (min-width: $tablet) {
       width: 24px;
       height: 24px;
@@ -163,73 +161,6 @@
     @media screen and (min-width: $desktop) {
       width: 24px;
       height: 24px;
-    }
-  }
-}
-
-.modal-thanks {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.6);
-  transition: transform $cubic;
-
-  background-color: $primary-white-color;
-
-  padding: 54px 32px;
-  width: 320px;
-
-  @media screen and (min-width: $tablet) {
-    padding: 44px 16px 32px 16px;
-    width: 480px;
-  }
-  @media screen and (min-width: $desktop) {
-    padding: 44px 16px 32px 16px;
-    width: 480px;
-  }
-
-  &__title {
-    font-weight: 600;
-
-    text-align: center;
-    color: $primary-text-color;
-
-    margin-bottom: 16px;
-
-    margin-bottom: 14px;
-
-    font-size: 20px;
-    line-height: calc(24 / 20);
-
-    @media screen and (min-width: $tablet) {
-      font-size: 32px;
-      line-height: calc(39 / 32);
-    }
-    @media screen and (min-width: $desktop) {
-      font-size: 32px;
-      line-height: calc(39 / 32);
-    }
-  }
-
-  &__description {
-    margin-bottom: 18px;
-    text-align: center;
-
-    font-weight: 500;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-
-    color: #5c5c5c;
-
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 34px;
-
-      font-size: 16px;
-      line-height: calc(20 / 16);
-    }
-    @media screen and (min-width: $desktop) {
-      font-size: 16px;
-      line-height: calc(20 / 16);
     }
   }
 }
