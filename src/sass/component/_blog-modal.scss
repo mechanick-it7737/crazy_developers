@@ -114,7 +114,12 @@
   position: absolute;
   right: 24px;
   top: 5px;
-}
+
+  @media screen and (min-width: $tablet) {
+  right: 35px;
+  top: 10px;
+  }
+  }
 .modal__closes {
   position: absolute;
   stroke: currentColor;
@@ -127,9 +132,6 @@
   }
 
   @media screen and (min-width: $tablet) {
-    right: 24px;
-    top: 24px;
-
     width: 24px;
     height: 24px;
   }
