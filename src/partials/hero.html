@@ -1,9 +1,11 @@
+
 <section class="hero"
          id="title-1">
   <div class="container">
     <div class="hero__box">
       <p class="hero__subtitle">
         flower <br>
+
         studio
       </p>
 
@@ -19,23 +21,24 @@
             ./images/image_hero_mobile.jpg    1x,
             ./images/image_hero_mobile@x2.jpg 2x
           "
-                media="(max-width: 767px)" />
-        <img src="./images/image_hero.jpg"
-             alt="Главное фото цветка" />
+                media="(max-width: 480px)" />
+        <img src="./images/image_hero_mobile.jpg"
+             alt="flowers" loading="lazy" />
       </picture>
 
       <button class="hero__btn"
               data-modal-open
               type="button"
               id="openOrderFromHero">
-        <svg class="hero__svg" width="64" height="76">
+        <svg class="hero__svg"
+             width="64"
+             height="76">
           <use href="./images/sprite.svg#iconbutton"></use>
         </svg>
       </button>
     </div>
-    <!-- <div class="hero__title-box"> -->
     <h1 class="hero__title">ANEMONE</h1>
-    <!-- </div> -->
   </div>
 </section>
 <source>
+
