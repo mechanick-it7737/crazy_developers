@@ -1,25 +1,27 @@
 <section>
-  <div class="backdrop is-hidden" data-modal-blog>
+  <div class="backdrop is-hidden"
+       id="blogModal">
     <div class="modal">
-      <button class="blog-modal-btn" data-modal-close-blog type="button">
-        <svg class="modal__close" aria-label="icon-close" width="18" height="18">
-        <use href="./images/sprite.svg#iconmodal-close"></use>
-      </svg>
+      <button class="blog-modal-btn"
+              modal-close
+              type="button"
+              id="closeSubscribe">
+        <svg class="modal__close"
+             aria-label="icon-close"
+             width="18"
+             height="18">
+          <use href="./images/sprite.svg#iconmodal-close"></use>
+        </svg>
       </button>
       <picture>
-        <source
-          srcset="./images/modal.jpg 1x, ./images/modal@2x.jpg 2x"
-          media="(min-width: 1280px)"
-        >
-        <source
-          srcset="./images/modal-tablet.jpg 1x, ./images/modal-tablet@2x.jpg 2x"
-          media="(min-width: 768px)"
-        >
-        <source
-          srcset="./images/modal-mobile.jpg 1x, ./images/modal-mobile@2x.jpg 2x"
-          media="(max-width: 480px)"
-        >
-        <img src="./images/modal.jpg" alt="flowers">
+        <source srcset="./images/modal.jpg 1x, ./images/modal@2x.jpg 2x"
+                media="(min-width: 1280px)">
+        <source srcset="./images/modal-tablet.jpg 1x, ./images/modal-tablet@2x.jpg 2x"
+                media="(min-width: 768px)">
+        <source srcset="./images/modal-mobile.jpg 1x, ./images/modal-mobile@2x.jpg 2x"
+                media="(max-width: 480px)">
+        <img src="./images/modal.jpg"
+             alt="flowers">
       </picture>
       <div class="modal__block">
         <p class="modal__text">Follow to our newsletter</p>
@@ -28,15 +30,15 @@
           product directly in your box.
         </p>
         <form class="modal__form">
-          <label class="modal__label" for="email">E-mail</label>
-          <input
-            class="modal__input"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Your email"
-          >
-          <button class="modal__button">Subscribe</button>
+          <label class="modal__label"
+                 for="email">E-mail</label>
+          <input class="modal__input"
+                 type="email"
+                 name="email"
+                 id="email"
+                 placeholder="Your email">
+          <button class="modal__button"
+                  id="confirmSubscribe">Subscribe</button>
         </form>
       </div>
     </div>

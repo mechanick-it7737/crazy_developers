@@ -88,11 +88,16 @@
   }
 
   &__title {
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    margin-top: -27px;
     font-weight: 400;
     font-size: 52px;
     line-height: calc(63 / 52);
 
     @media screen and (min-width: $tablet) {
+      margin-top: -52px;
       font-size: 120px;
     }
 

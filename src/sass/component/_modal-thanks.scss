@@ -1,5 +1,5 @@
 .modal-thanks {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -56,6 +56,12 @@
 
       font-size: 16px;
     }
+  }
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
 
