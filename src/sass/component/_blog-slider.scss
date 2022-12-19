@@ -18,11 +18,11 @@
 
     transition: all $cubic;
     opacity: 0.3;
-    transform: scale(0.9);
+    transform: scale(0.8);
 
     &.slick-center {
       opacity: 1;
-      transform: scale(1.2);
+      transform: scale(1);
 
       @media screen and (min-width: $tablet) {
         margin-left: 75px;
