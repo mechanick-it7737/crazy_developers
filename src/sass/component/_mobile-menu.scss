@@ -48,17 +48,18 @@
     }
 
     &--button {
-      display: flex;
-      flex-direction: row-reverse;
+      position: relative;
+      left: 40%;
+      top: 14px;
+
 
       margin-bottom: 84px;
-      padding-top: 16px;
-      padding-right: 16px;
+      background-color: $button-color;
     }
 
     &--icon {
       cursor: pointer;
-      stroke: white;
+      stroke: $primary-white-color;
       transition: stroke $cubic;
 
       &:hover,
