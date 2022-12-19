@@ -110,3 +110,27 @@
     }
   }
 }
+.blog-modal-btn {
+  position: absolute;
+  right: 24px;
+  top: 5px;
+}
+.modal__closes {
+  position: absolute;
+  stroke: currentColor;
+  cursor: pointer;
+  transition: stroke $cubic;
+  
+  &:hover,
+  &:focus {
+    stroke: rgba(0, 0, 0, 0.3);
+  }
+
+  @media screen and (min-width: $tablet) {
+    right: 24px;
+    top: 24px;
+
+    width: 24px;
+    height: 24px;
+  }
+}
