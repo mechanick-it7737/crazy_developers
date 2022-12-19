@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-    width: 272px;
+  width: 272px;
   padding: 28px 16px;
 
   transition: transform $cubic;
@@ -102,13 +102,13 @@
 
   background-color: transparent;
   fill: $primary-text-color;
+
   @media screen and (min-width: $tablet) {
     top: 24px;
     right: 24px;
   }
 
   &__svg {
-    
     @media screen and (min-width: $tablet) {
       width: 24px;
       height: 24px;

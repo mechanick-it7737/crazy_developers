@@ -22,7 +22,6 @@
     margin-left: 11px;
     margin-right: auto;
 
-    
     font-size: 14px;
     line-height: calc(17 / 14);
 
@@ -30,13 +29,11 @@
 
     @media screen and (min-width: $tablet) {
       margin-left: 49px;
-      margin-right: auto;
 
       font-size: 24px;
     }
     @media screen and (min-width: $desktop) {
       margin-left: 210px;
-      margin-right: auto;
 
       font-size: 32px;
     }
@@ -46,6 +43,7 @@
     margin-left: auto;
 
     background-color: transparent;
+
     @media screen and (min-width: $desktop) {
       margin-right: 145px;
     }
@@ -96,21 +94,20 @@
 
     @media screen and (min-width: $tablet) {
       font-size: 120px;
-      line-height: calc(146 / 120);
     }
+
     @media screen and (min-width: $desktop) {
       font-size: 160px;
-      line-height: calc(195 / 160);
     }
   }
 }
 
 .form-hero__btn {
   display: flex;
-justify-content: center;
+  justify-content: center;
 
   width: 100%;
-  
+
   padding-bottom: 10px;
   padding-top: 10px;
 
@@ -123,11 +120,6 @@ justify-content: center;
   border-radius: 8px;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 14px;
-
-    font-size: 18px;
-  }
-  @media screen and (min-width: $desktop) {
     padding-top: 14px;
 
     font-size: 18px;
@@ -146,19 +138,11 @@ justify-content: center;
     top: 24px;
     right: 24px;
   }
-  @media screen and (min-width: $desktop) {
-    top: 24px;
-    right: 24px;
-  }
 
   &__svg {
     fill: $primary-text-color;
 
     @media screen and (min-width: $tablet) {
-      width: 24px;
-      height: 24px;
-    }
-    @media screen and (min-width: $desktop) {
       width: 24px;
       height: 24px;
     }
