@@ -1,29 +1,31 @@
-<div class="modal-thanks">
-  <button class="modal-thanks__button" data-modal-close>
-    <svg class="modal__close" aria-label="icon-close" width="18" height="18">
-        <use href="./images/sprite.svg#iconmodal-close"></use>
-    </svg>
-  </button>
-    
-    <div class="modal-thanks__box">
-      <picture class="modal-thanks__img">
-        <source
-          srcset="
+<div class="modal-thanks is-hidden"
+     id="modalThanks">
+  <svg class="modal__close"
+       id="closeThanksModal"
+       data-modal-close>
+    <use href="./images/sprite.svg#iconmodal-close"></use>
+  </svg>
+  <div class="modal-thanks__box">
+    <picture class="modal-thanks__img">
+      <source srcset="
             ./images/modal-tablet-thank.png    1x,
             ./images/modal-tablet-thank@x2.png 2x"
-          media="(min-width: 768px)">
-        <source
-          srcset="
+              media="(min-width: 768px)" />
+      <source srcset="
             ./images/modal-mobile-thank.png    1x,
             ./images/modal-mobile-thank@x2.png 2x
           "
-          media="(max-width: 767px)">
-        <img src="./images/modal-mobile-thank.png" alt="The main photo of the flower">
-      </picture>
-    </div>
-    <p class="modal-thanks__title">Thank you!</p>
-    <p class="modal-thanks__description">
-      We have received your contact details and will reach you soon.
-    </p>
-    <button class="modal__button" type="submit">Continue</button>
+              media="(max-width: 767px)" />
+      <img src="./images/modal-mobile-thank.png"
+           alt="Главное фото цветка" />
+    </picture>
+  </div>
+  <p class="modal-thanks__title">Thank you!</p>
+  <p class="modal-thanks__description">
+    We have received your contact details and will reach you soon.
+  </p>
+  <button class="modal__button"
+          id="continueThanksModal"
+          type="button">Continue</button>
+</div>
 </div>
