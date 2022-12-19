@@ -24,10 +24,13 @@
       opacity: 1;
       transform: scale(1);
 
-      @media screen and (min-width: $tablet) {
-        margin-left: 75px;
-        margin-right: 75px;
+      &:not(:first-child) {
+        @media screen and (min-width: $tablet) {
+        margin-left: 25px;
+        margin-right: 25px;
       }
+      }
+      
     }
   }
 
@@ -73,6 +76,7 @@
   margin-right: auto;
 
   @media screen and (min-width: $tablet) {
+    margin: 0;
     width: 253px;
     height: 295px;
   }
