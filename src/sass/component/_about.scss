@@ -1,13 +1,17 @@
 .about-subtitle {
   margin-bottom: 16px;
 
-  font-size: 22px;
+  font-size: 16px;
   line-height: 1.2;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: unset;
     font-size: 20px;
-    line-height: 1.2;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: unset;
+    font-size: 22px;
   }
 }
 
