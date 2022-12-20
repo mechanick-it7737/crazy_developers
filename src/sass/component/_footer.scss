@@ -61,6 +61,7 @@
 }
 .footer-nav__link {
   transition: color $cubic;
+
   &:hover {
     color: $button-hover-color;
   }
@@ -98,6 +99,7 @@
   flex-wrap: wrap;
 
   transition: color $cubic;
+
   &:hover {
     color: $button-hover-color;
   }
@@ -153,6 +155,7 @@
 
 .footer-social__link {
   transition: color $cubic;
+  
   &:hover {
     color: $button-hover-color;
   }
