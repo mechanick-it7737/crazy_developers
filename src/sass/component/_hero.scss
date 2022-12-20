@@ -1,5 +1,12 @@
 .hero {
-    padding-top: 44px;
+  padding-top: 44px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 38px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 64px;
+  }
 
   &__box {
     position: relative;
@@ -7,13 +14,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    @media screen and (min-width: $tablet) {
-      padding-top: 38px;
-    }
-    @media screen and (min-width: $desktop) {
-      padding-top: 64px;
-    }
   }
 
   &__subtitle {
@@ -70,7 +70,6 @@
       fill: $button-focus-color;
     }
   }
-
 
   &__title-box {
     position: relative;
