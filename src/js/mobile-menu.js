@@ -14,16 +14,19 @@
       return;
     }
 
+    if (!menuBtnRef.classList.contains("is-open")) {
+      document.body.style.overflowY = null;
+    }
+
     menuBtnRef.classList.add('is-open');
     menuBtnRef.setAttribute('aria-expanded', false);
     mobileMenuRef.classList.remove("is-open");
-    document.body.style.overflowY = null;
   }
 
-  for(let element of menuItems){
+  for (let element of menuItems) {
     element.addEventListener("click", closeMenuFunc);
   }
-  
+
   mainMenuBtn.addEventListener("click", () => {
     if (document.body.style.overflowY) {
       document.body.style.overflowY = null;

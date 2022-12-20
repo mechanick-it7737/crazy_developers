@@ -3,17 +3,18 @@ $(document).ready(function () {
   $('.slider').slick({
     arrows: true,
     adaptiveHight: false,
-    slidesToShow:3,
+    slidesToShow:1,
     slidesToScroll: 1,
-    spped: 1000,
+    spped: 1500,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
     pauseOnFocus:true, 
     pauseOnHover: true,
     pauseOnDotsHover: true,
     draggable: false,
     centerMode: true,
+    variableWidth: true,
 
       responsive: [
     {

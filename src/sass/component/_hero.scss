@@ -1,12 +1,12 @@
 .hero {
+    padding-top: 44px;
+
   &__box {
     position: relative;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    padding-top: 44px;
     @media screen and (min-width: $tablet) {
       padding-top: 38px;
     }
@@ -49,8 +49,6 @@
 
   &__svg {
     fill: currentColor;
-
-    transition: fill $cubic;
 
     transition: fill $cubic;
 

@@ -1,20 +1,23 @@
-.store__img {
-  width: 100%;
-}
-
 .store__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
 
+  @media screen and(min-width:$tablet) {
+    gap: 32px;
+  }
+
   margin-bottom: 32px;
 }
 
 .store__item {
   width: calc((100% - 1 * 16px) / 2);
-}
 
+  @media screen and(min-width:$tablet) {
+    width: calc((100% - 1 * 32px) / 2);
+  }
+}
 .store__title {
   display: flex;
   align-items: center;
