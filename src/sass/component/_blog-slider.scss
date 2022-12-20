@@ -1,17 +1,19 @@
+
 .slick-list {
   overflow: hidden;
 }
 
 .slick-track {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider {
   position: relative;
 
   margin-bottom: 50px;
+  transition: all $cubic;
 
   &__item {
     text-align: center;
@@ -20,15 +22,16 @@
     opacity: 0.3;
     transform: scale(0.8);
 
+    &:not(:first-child) {
+        margin-right: 8px;
+
+        @media screen and (min-width: $tablet) {
+        margin-right: 32px;
+      }
+
     &.slick-center {
       opacity: 1;
       transform: scale(1);
-
-      &:not(:first-child) {
-        @media screen and (min-width: $tablet) {
-        margin-left: 25px;
-        margin-right: 25px;
-      }
       }
       
     }
@@ -70,20 +73,17 @@
 }
 
 .img {
-  width: 210px;
-  height: 280px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 153px;
+  height: 181px;
 
   @media screen and (min-width: $tablet) {
-    margin: 0;
-    width: 253px;
-    height: 295px;
+    width: 344;
+    height: 398px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 430px;
-    height: 490px;
+    width: 390px;
+    height: 421px;
   }
 }
 
