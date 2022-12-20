@@ -33,19 +33,26 @@
       font-size: 24px;
     }
     @media screen and (min-width: $desktop) {
-      margin-left: 210px;
+      margin: 0;
 
       font-size: 32px;
     }
   }
 
+  &__img {
+    @media screen and (min-width: $desktop) {
+      margin-left: 110px;
+      margin-right: 110px;
+    }
+  }
+ 
   &__btn {
     margin-left: auto;
 
     background-color: transparent;
 
     @media screen and (min-width: $desktop) {
-      margin-right: 145px;
+      margin: 0;
     }
   }
 
