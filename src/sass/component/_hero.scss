@@ -73,21 +73,6 @@
     }
   }
 
-  &__title-box {
-    position: relative;
-    z-index: 0;
-    margin-top: -27px;
-
-    text-align: center;
-
-    @media screen and (min-width: $tablet) {
-      margin-top: -52px;
-    }
-    @media screen and (min-width: $desktop) {
-      margin-top: -102px;
-    }
-  }
-
   &__title {
     position: relative;
     text-align: center;
@@ -103,6 +88,7 @@
     }
 
     @media screen and (min-width: $desktop) {
+      margin-top: -102px;
       font-size: 160px;
     }
   }
